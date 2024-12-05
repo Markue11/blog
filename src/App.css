@@ -1,0 +1,230 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+  height: 100%;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #f0f0f0, #e1e1e1); /* Soft gradient background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  justify-content: center; /* Centers the content vertically */
+  align-items: center; /* Centers the content horizontally */
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #6a6a6a, #b1b1b1); /* Softer gradient for navbar */
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ddd; /* Lighten color on hover */
+}
+
+/* Active Link Style */
+.nav-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #f9f9f9; /* Highlight active link */
+}
+
+/* Content Section */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+button {
+  background-color: #556b2f; /* Muted olive green */
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #4b6f26; /* Darker olive green on hover */
+}
+
+/* Forms */
+.form-container {
+  max-width: 450px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+}
+
+input:focus {
+  border-color: #556b2f; /* Match button color */
+  outline: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+  }
+
+  /* Forms */
+  .form-container {
+    max-width: 90%;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar */
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  /* Buttons */
+  button {
+    padding: 8px 12px;
+  }
+
+  /* Form Inputs */
+  input {
+    padding: 8px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+}
+
+/* Buttons */
+button {
+  background-color: #4e9f3d; /* Slightly brighter olive green */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: auto; /* Allow button to adjust based on content */
+  font-size: 0.9rem; /* Slightly smaller font size */
+}
+
+button:hover {
+  background-color: #3c7a2a; /* Darker green on hover */
+}
+
+/* Add Post Button */
+.add-post-button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+/* Edit Post Button */
+.edit-post-button {
+  padding: 8px 14px;
+  font-size: 0.9rem;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center; /* Centers the content vertically */
+  align-items: center; /* Centers the content horizontally */
+}
+
+/* Form Container */
+.form-container {
+  max-width: 600px; /* Limit the width of the form */
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

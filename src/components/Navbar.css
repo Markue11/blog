@@ -1,0 +1,44 @@
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, #6c757d, #adb5bd); /* Softer gradient with muted gray tones */
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow for a subtle look */
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff; /* Bright white for the logo */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Slight shadow for better readability */
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  gap: 20px; /* Increased gap for better spacing */
+}
+
+/* Individual Navbar Link */
+.nav-link {
+  color: #f8f9fa; /* Light off-white color */
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500; /* Medium weight for better readability */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f1f1f1; /* Slightly brighter shade on hover */
+  transform: translateY(-2px); /* Slight hover lift effect */
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #ffffff; /* White color for active link for better visibility */
+  text-decoration: underline;
+  text-decoration-color: #007bff; /* Blue underline for active link */
+}

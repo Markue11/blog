@@ -1,0 +1,5 @@
+const handleAddPost = (newPost) => {
+  setPosts([...posts, { ...newPost, id: Date.now() }]);
+};
+{currentPage === 'Addpost' && <AddPost addPost={handleAddPost} navigate={navigate} />}
+

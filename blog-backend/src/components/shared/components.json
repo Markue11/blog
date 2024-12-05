@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_components",
+  "info": {
+    "displayName": "Components"
+  },
+  "options": {},
+  "attributes": {
+    "AddPost": {
+      "type": "text"
+    }
+  }
+}
